@@ -68,8 +68,11 @@ export default function Home() {
 
       <div className="marquee" aria-label="Salon hizmetleri">
         <div className="marquee-track">
-          <span>KESİM</span><i>✦</i><span>RENK</span><i>✦</i><span>BALYAJ</span><i>✦</i><span>BAKIM</span><i>✦</i><span>GELİN</span><i>✦</i><span>MAKYAJ</span><i>✦</i>
-          <span aria-hidden="true">KESİM</span><i aria-hidden="true">✦</i><span aria-hidden="true">RENK</span><i aria-hidden="true">✦</i><span aria-hidden="true">BALYAJ</span><i aria-hidden="true">✦</i><span aria-hidden="true">BAKIM</span><i aria-hidden="true">✦</i><span aria-hidden="true">GELİN</span><i aria-hidden="true">✦</i><span aria-hidden="true">MAKYAJ</span><i aria-hidden="true">✦</i>
+          {[0, 1, 2, 3].map((group) => (
+            <div className="marquee-group" aria-hidden={group === 0 ? undefined : true} key={group}>
+              <span>KESİM</span><i>✦</i><span>RENK</span><i>✦</i><span>BALYAJ</span><i>✦</i><span>BAKIM</span><i>✦</i><span>GELİN</span><i>✦</i><span>MAKYAJ</span><i>✦</i>
+            </div>
+          ))}
         </div>
       </div>
 

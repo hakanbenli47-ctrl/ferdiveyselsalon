@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "İletişim & Randevu",
@@ -22,7 +23,12 @@ export default function ContactPage() {
           <div className="contact-note"><h3>Randevu notu</h3><p>İşleminizi daha doğru planlayabilmemiz için WhatsApp mesajınıza güncel saç fotoğrafınızı ve istediğiniz görünümü ekleyebilirsiniz. Çalışma saatleri ve uygunluk için lütfen iletişime geçin.</p></div>
         </div>
         <div className="map-frame">
-          <iframe title="Ferdi Veysel Salon harita konumu" src="https://www.google.com/maps?q=Ferdi%20Veysel%20Bayan%20Kuaf%C3%B6r%C3%BC%20Batman&output=embed" loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
+          <Image src="/images/salon-hero-interior.png" alt="Ferdi Veysel Salon için temsili salon atmosferi" fill sizes="(max-width: 900px) 100vw, 52vw" />
+          <div className="map-card">
+            <span>BATMAN · GAP MAHALLESİ</span>
+            <h3>Salona gelmeden önce yolunuzu planlayın.</h3>
+            <a href="https://www.google.com/maps/search/?api=1&query=Ferdi%20Veysel%20Bayan%20Kuaf%C3%B6r%C3%BC%20Batman" target="_blank" rel="noreferrer">Google Maps’te aç</a>
+          </div>
         </div>
       </section>
     </>
