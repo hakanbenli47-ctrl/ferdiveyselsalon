@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
-      <section className="page-hero"><div className="shell page-hero-inner"><p className="eyebrow">İLETİŞİM</p><h1>Randevunuzu<br /><em>birlikte planlayalım.</em></h1><p>Hizmet, uygunluk ve ön görüşme için doğrudan telefon veya WhatsApp üzerinden ulaşabilirsiniz.</p></div></section>
+      <section className="page-hero page-hero-contact"><div className="shell page-hero-inner"><p className="eyebrow">İLETİŞİM</p><h1>Randevunuzu<br /><em>birlikte planlayalım.</em></h1><p>Hizmet, uygunluk ve ön görüşme için doğrudan telefon veya WhatsApp üzerinden ulaşabilirsiniz.</p></div></section>
 
       <section className="shell section-space contact-page-grid">
         <div className="contact-panel">

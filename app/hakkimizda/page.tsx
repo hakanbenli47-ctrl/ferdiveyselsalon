@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
-      <section className="page-hero"><div className="shell page-hero-inner"><p className="eyebrow">HAKKIMIZDA</p><h1>Ustalık,<br /><em>iyi hissettirir.</em></h1><p>Her misafir için dinleyen, açıkça anlatan ve özenle uygulayan bir salon yaklaşımı.</p></div></section>
+      <section className="page-hero page-hero-about"><div className="shell page-hero-inner"><p className="eyebrow">HAKKIMIZDA</p><h1>Ustalık,<br /><em>iyi hissettirir.</em></h1><p>Her misafir için dinleyen, açıkça anlatan ve özenle uygulayan bir salon yaklaşımı.</p></div></section>
 
       <section className="shell about-story section-space">
         <div className="about-image"><Image src="/images/salon-hero-interior.png" alt="Ferdi Veysel Salon için temsili premium iç mekân" fill sizes="(max-width: 900px) 100vw, 52vw" /></div>

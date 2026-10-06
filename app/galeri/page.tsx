@@ -17,7 +17,7 @@ const gallery = [
 export default function GalleryPage() {
   return (
     <>
-      <section className="page-hero"><div className="shell page-hero-inner"><p className="eyebrow">GALERİ</p><h1>İlham veren<br /><em>dokunuşlar.</em></h1><p>Renk, form, doku ve özel gün görünümlerinden seçkiler.</p></div></section>
+      <section className="page-hero page-hero-gallery"><div className="shell page-hero-inner"><p className="eyebrow">GALERİ</p><h1>İlham veren<br /><em>dokunuşlar.</em></h1><p>Renk, form, doku ve özel gün görünümlerinden seçkiler.</p></div></section>
       <section className="shell section-space">
         <div className="gallery-grid">
           {gallery.map((item) => (
